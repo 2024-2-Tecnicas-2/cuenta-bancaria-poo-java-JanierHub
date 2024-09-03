@@ -6,5 +6,6 @@ public class Principal {
         
        cuenta.CalcularInteres();
        cuenta.setTipoInteres(20);
+       cuenta.retirar(0);
     }
 }

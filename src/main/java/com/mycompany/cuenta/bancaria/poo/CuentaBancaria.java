@@ -35,7 +35,7 @@ public class CuentaBancaria {
     }
 
     public void ingresar(double cantidad) {
-        System.out.println("Ingrese una actidad a consignar");
+        System.out.println("Ingrese una cantidad a consignar");
         cantidad = lector.nextInt();
         double Incremento = saldo + cantidad;
         System.out.println("Su saldo actual es: " + Incremento);
@@ -59,8 +59,9 @@ public class CuentaBancaria {
     }
       public void CalcularInteres(){
           
-          double SaldoConInteres = saldo + (saldo * tipoInteres / 100);
+          
           if (saldo> 0 ) {
+              double SaldoConInteres = saldo + (saldo * tipoInteres / 100);
               System.out.println("Su saldo con interes aplicado es de:" + SaldoConInteres);
           } else {
               
@@ -73,9 +74,14 @@ public class CuentaBancaria {
         
        if (tipoInteres > 0 && tipoInteres < 10) {
                 System.out.println("El tipo de interes " + tipoInteres + " es valido.");
+                
+                 double SaldoConInteres = saldo + (saldo * tipoInteres / 100);
+                System.out.println("Su saldo con el interes actual es : " + SaldoConInteres);
+                
             } else {
                 System.out.println("El tipo de interes " + tipoInteres + " es invalido.");
-                
+               
+               
     }
       
     }

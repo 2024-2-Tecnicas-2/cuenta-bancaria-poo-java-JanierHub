@@ -72,9 +72,9 @@ public class CuentaBancaria {
     public void setTipoInteres(double tipoInteres) {
         
        if (tipoInteres > 0 && tipoInteres < 10) {
-                System.out.println("El tipo de interés " + tipoInteres + " es válido.");
+                System.out.println("El tipo de interes " + tipoInteres + " es valido.");
             } else {
-                System.out.println("El tipo de interés " + tipoInteres + " es inválido.");
+                System.out.println("El tipo de interes " + tipoInteres + " es invalido.");
                 
     }
       
